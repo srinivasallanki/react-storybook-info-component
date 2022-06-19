@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Banner from './stories/Banner'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className='App'>
+      <Banner variant='info'>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This is an example of how we can use our components from Storybook in
+          a NextJS application. JSX components that are defined in Storybook can
+          be imported/exported like regular JSX components. If you need to
+          import components from Storybook in external applications then you
+          should explore publishing a NPM package that contains the relevant
+          components.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </Banner>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
